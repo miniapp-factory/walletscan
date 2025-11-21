@@ -11,9 +11,12 @@ const Context = createContext<MiniAppContext>({ sdk: null, isInMiniApp: false })
 
 export function MiniAppProvider({ children }: { children: ReactNode }) {
   const sdk =
-    typeof window !== "undefined" && (window as any).miniappSDK as MiniAppSDK;
+    typeof window !== "undefined"
+      ? (window as unknown as { miniappSDK?: MiniAppSDK }).miniappSDK ?? null
+      : null;
   const isInMiniApp =
-    typeof window !== "undefined" && !!(window as any).frame;
+    typeof window !== "undefined" &&
+    !!(window as unknown as { frame?: unknown }).frame;
   return (
     <Context.Provider value={{ sdk, isInMiniApp }}>
       {children}
