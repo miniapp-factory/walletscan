@@ -426,3 +426,55 @@
 +Frame: use OnchainKit (BasePay) for signatures + wallet linking.
 +
 +Once connected, grab the user’s address and run a full analysis on Base chain.
+
+# 2025-11-21 09:47:21.055422
++Activity Metrics
++
++Total transactions
++
++Active days
++
++Inflows / Outflows
++
++Swap count
++
++Number of contracts interacted
++
++Gas used
++
++Failed transactions
++
++Total minting events
++
++Airdrops claimed
++
++Bridge activity (Base ⇆ L1/L2)
+
+# 2025-11-21 09:47:21.055799
++Activity Metrics
++
++Total transactions
++
++Active days
++
++Inflows / Outflows
++
++Swap count
++
++Number of contracts interacted
++
++Gas used
++
++Failed transactions
++
++Total minting events
++
++Airdrops claimed
++
++Bridge activity (Base ⇆ L1/L2)
+
+# 2025-11-21 09:47:51.630332
++apply changes
+
+# 2025-11-21 09:47:51.630992
++apply changes
