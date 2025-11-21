@@ -1,4 +1,4 @@
-export async function fetchBaseScanData(address: string) {
+export async function fetchBaseScanData() {
   // Placeholder: replace with real BaseScan API calls
   return {
     transactions: [],

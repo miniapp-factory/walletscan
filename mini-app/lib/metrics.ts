@@ -1,4 +1,4 @@
-export function calculateMetrics(data: any) {
+export function calculateMetrics() {
   // Placeholder: compute totals, volumes, sybil score, etc.
   return {
     totalTxns: 0,
