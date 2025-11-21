@@ -1,0 +1,410 @@
+
+# 2025-11-21 08:56:22.400758
++Code the following app
++```
++# **📌 Prompt: Build “BaseWalletScan” Mini App (Web + Frame)**
++
++Create a Farcaster Mini App + Web App called **BaseWalletScan**.
++The app should auto-detect whether the user is inside Farcaster (Frame) or a regular browser.
++
++### **🔐 1. Wallet Connection**
++
++* Browser: support WalletConnect + Privy + injected wallets (MetaMask, Coinbase Wallet).
++* Frame: use OnchainKit (BasePay) for signatures + wallet linking.
++* Once connected, grab the user’s address and run a full analysis on **Base chain**.
++
++---
++
++# **📊 2. Wallet Activity Scanner (Base Chain Only)**
++
++Pull and analyze data using:
++
++* BaseScan API
++* OnchainKit providers
++* Optional: Flipside or Covalent if needed
++
++Scan the last **10,000 blocks or last 12 months**, whichever is more complete.
++
++Provide:
++
++### **A. Activity Metrics**
++
++* Total transactions
++* Active days
++* Inflows / Outflows
++* Swap count
++* Number of contracts interacted
++* Gas used
++* Failed transactions
++* Total minting events
++* Airdrops claimed
++* Bridge activity (Base ⇆ L1/L2)
++
++---
++
++# **📈 3. Performance Metrics**
++
++Compute:
++
++* Total Volume (USD + ETH)
++* Swap P&L (requires price-fetch at tx timestamps)
++* Net deposits vs withdrawals
++* Token performance over time
++* Monthly heatmap: Volume + Transactions
++* Wallet age
++* Largest wins / losses
++* Profitability score
++
++---
++
++# **🛡 4. Sybil Risk Analysis**
++
++Analyze signals:
++
++* Rapid repetitive small-value transfers
++* Very short interaction windows with many contracts
++* Highly repetitive swap patterns
++* High faucet usage
++* Multiple wallets interacting with the same contracts in sync
++* Transaction intervals entropy score
++* Bot-likelihood score
++* Bridging patterns
++  Output:
++  **Sybil Score: 0–100** (0 = clean, 100 = extremely likely bot)
++
++---
++
++# **⭐ 5. Wallet Score (0–100)**
++
++Based on:
++
++* Activity
++* Volume
++* Risk
++* Diversity of protocols
++* Minting vs dumping
++* Long-term holding
++* NFT and token interactions
++* Profitability
++
++Provide:
++
++* Overall score
++* Sub-scores: Activity / Diversity / Risk / Profitability / Authenticity
++
++---
++
++# **📦 6. Feature Modules**
++
++Include these modules:
++
++### **🪪 Identity Module**
++
++* ENS/name lookup
++* Farcaster handle if linked
++* Social graph connections (if available)
++
++### **💰 Token Breakdown**
++
++* Portfolio allocation
++* Token age
++* Unrealized P&L
++* Rug risk alert
++* Stale tokens (no transfers for 45+ days)
++* Smart money token overlap
++
++### **🔍 Contract Interaction Insights**
++
++* Top protocols used
++* New contract interactions
++* Recurring smart contracts
++* High-risk contract warnings
++
++### **🎯 User Labels**
++
++Automatically detect and display labels like:
++
++* Farmer
++* NFT Trader
++* DeFi Trader
++* Airdrop Hunter
++* Whale
++* Newbie
++* Dormant
++* Smart Money-lite
++* Burner Account
++* Bridge Hopper
++
++---
++
++# **📑 7. Final Output / Dashboard**
++
++The result page should show:
++
++### **Summary Card**
++
++* Address (short format)
++* Wallet Score
++* Sybil Score
++* Total Volume
++* Profit/Loss
++* Monthly chart
++* Activity streak
++
++### **Detail Sections**
++
++* Transaction Analytics
++* Swap History
++* Token Breakdown
++* Contract Interactions
++* Risk Analysis
++* Identity & Labels
++
++### **Export Options**
++
++* PDF report
++* Share result as a Farcaster cast card
++* JSON export
++* Screenshot of scorecard
++
++---
++
++# **🎨 8. UI / UX Requirements**
++
++* Built in Tailwind
++* Frame UI should be compact (step-by-step)
++* Web UI should be full dashboard
++* Color theme: **Base × Farcaster (soft blue, white, minimal)**
++* Mobile optimized
++* Add skeleton loading states
++
++---
++
++# **🧠 9. Additional Features (Optional)**
++
++* “Compare two wallets” mode
++* Daily score tracker
++* “Clean your wallet” suggestions
++* Airdrop likelihood prediction
++* Badge system for achievements
++* AI-generated wallet description (like “You are a DeFi power-user with low risk, high diversity”)
++
++---
++
++If you want, I can now generate:
++
++✅ full HTML/CSS/JS code
++✅ full Frame + API endpoints
++✅ ready-to-deploy Vercel template
++✅ the signature Frame card
++✅ the score-engine backend
++✅ the final UI design preview
++
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-11-21 08:56:22.402964
++Code the following app
++```
++# **📌 Prompt: Build “BaseWalletScan” Mini App (Web + Frame)**
++
++Create a Farcaster Mini App + Web App called **BaseWalletScan**.
++The app should auto-detect whether the user is inside Farcaster (Frame) or a regular browser.
++
++### **🔐 1. Wallet Connection**
++
++* Browser: support WalletConnect + Privy + injected wallets (MetaMask, Coinbase Wallet).
++* Frame: use OnchainKit (BasePay) for signatures + wallet linking.
++* Once connected, grab the user’s address and run a full analysis on **Base chain**.
++
++---
++
++# **📊 2. Wallet Activity Scanner (Base Chain Only)**
++
++Pull and analyze data using:
++
++* BaseScan API
++* OnchainKit providers
++* Optional: Flipside or Covalent if needed
++
++Scan the last **10,000 blocks or last 12 months**, whichever is more complete.
++
++Provide:
++
++### **A. Activity Metrics**
++
++* Total transactions
++* Active days
++* Inflows / Outflows
++* Swap count
++* Number of contracts interacted
++* Gas used
++* Failed transactions
++* Total minting events
++* Airdrops claimed
++* Bridge activity (Base ⇆ L1/L2)
++
++---
++
++# **📈 3. Performance Metrics**
++
++Compute:
++
++* Total Volume (USD + ETH)
++* Swap P&L (requires price-fetch at tx timestamps)
++* Net deposits vs withdrawals
++* Token performance over time
++* Monthly heatmap: Volume + Transactions
++* Wallet age
++* Largest wins / losses
++* Profitability score
++
++---
++
++# **🛡 4. Sybil Risk Analysis**
++
++Analyze signals:
++
++* Rapid repetitive small-value transfers
++* Very short interaction windows with many contracts
++* Highly repetitive swap patterns
++* High faucet usage
++* Multiple wallets interacting with the same contracts in sync
++* Transaction intervals entropy score
++* Bot-likelihood score
++* Bridging patterns
++  Output:
++  **Sybil Score: 0–100** (0 = clean, 100 = extremely likely bot)
++
++---
++
++# **⭐ 5. Wallet Score (0–100)**
++
++Based on:
++
++* Activity
++* Volume
++* Risk
++* Diversity of protocols
++* Minting vs dumping
++* Long-term holding
++* NFT and token interactions
++* Profitability
++
++Provide:
++
++* Overall score
++* Sub-scores: Activity / Diversity / Risk / Profitability / Authenticity
++
++---
++
++# **📦 6. Feature Modules**
++
++Include these modules:
++
++### **🪪 Identity Module**
++
++* ENS/name lookup
++* Farcaster handle if linked
++* Social graph connections (if available)
++
++### **💰 Token Breakdown**
++
++* Portfolio allocation
++* Token age
++* Unrealized P&L
++* Rug risk alert
++* Stale tokens (no transfers for 45+ days)
++* Smart money token overlap
++
++### **🔍 Contract Interaction Insights**
++
++* Top protocols used
++* New contract interactions
++* Recurring smart contracts
++* High-risk contract warnings
++
++### **🎯 User Labels**
++
++Automatically detect and display labels like:
++
++* Farmer
++* NFT Trader
++* DeFi Trader
++* Airdrop Hunter
++* Whale
++* Newbie
++* Dormant
++* Smart Money-lite
++* Burner Account
++* Bridge Hopper
++
++---
++
++# **📑 7. Final Output / Dashboard**
++
++The result page should show:
++
++### **Summary Card**
++
++* Address (short format)
++* Wallet Score
++* Sybil Score
++* Total Volume
++* Profit/Loss
++* Monthly chart
++* Activity streak
++
++### **Detail Sections**
++
++* Transaction Analytics
++* Swap History
++* Token Breakdown
++* Contract Interactions
++* Risk Analysis
++* Identity & Labels
++
++### **Export Options**
++
++* PDF report
++* Share result as a Farcaster cast card
++* JSON export
++* Screenshot of scorecard
++
++---
++
++# **🎨 8. UI / UX Requirements**
++
++* Built in Tailwind
++* Frame UI should be compact (step-by-step)
++* Web UI should be full dashboard
++* Color theme: **Base × Farcaster (soft blue, white, minimal)**
++* Mobile optimized
++* Add skeleton loading states
++
++---
++
++# **🧠 9. Additional Features (Optional)**
++
++* “Compare two wallets” mode
++* Daily score tracker
++* “Clean your wallet” suggestions
++* Airdrop likelihood prediction
++* Badge system for achievements
++* AI-generated wallet description (like “You are a DeFi power-user with low risk, high diversity”)
++
++---
++
++If you want, I can now generate:
++
++✅ full HTML/CSS/JS code
++✅ full Frame + API endpoints
++✅ ready-to-deploy Vercel template
++✅ the signature Frame card
++✅ the score-engine backend
++✅ the final UI design preview
++
++```
++
++Generate an app logo and update the app metadata title and description.
