@@ -408,3 +408,21 @@
 +```
 +
 +Generate an app logo and update the app metadata title and description.
+
+# 2025-11-21 09:33:12.567793
++Wallet Connection
++
++Browser: support WalletConnect + Privy + injected wallets (MetaMask, Coinbase Wallet).
++
++Frame: use OnchainKit (BasePay) for signatures + wallet linking.
++
++Once connected, grab the user’s address and run a full analysis on Base chain.
+
+# 2025-11-21 09:33:12.568419
++Wallet Connection
++
++Browser: support WalletConnect + Privy + injected wallets (MetaMask, Coinbase Wallet).
++
++Frame: use OnchainKit (BasePay) for signatures + wallet linking.
++
++Once connected, grab the user’s address and run a full analysis on Base chain.
