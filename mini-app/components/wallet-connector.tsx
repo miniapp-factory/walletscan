@@ -25,7 +25,9 @@ export default function WalletConnector() {
       // Browser: use injected wallets (MetaMask, Coinbase)
       if ((window as any).ethereum) {
         try {
-          const provider = (window as any).ethereum;
+          const provider = (window as unknown as {
+            ethereum?: { request: (args: any) => Promise<any> };
+          }).ethereum;
           await provider.request({ method: "eth_requestAccounts" });
           const accounts = await provider.request({ method: "eth_accounts" });
           setAddress(accounts[0]);
